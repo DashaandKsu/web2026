@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="mt-5 text-center">Cookies</h1>
+
+{% if action_text %}
+<div class="alert alert-info mt-3" role="alert">{{ action_text }}</div>
+<p class="text-muted small">Повторно откройте эту страницу — сработает переключение: нет куки → установка, есть → удаление.</p>
+{% endif %}
+
+<h2 class="h5 mt-4">Куки в текущем запросе (и ожидаемое состояние после ответа)</h2>
+{% if cookies %}
+<ul>
+{% for name, value in cookies %}
+<li><strong>{{ name }}</strong>: {{ value }}</li>
+{% endfor %}
+</ul>
+{% else %}
+<p>Нет cookies</p>
+{% endif %}
+
+{% endblock %}

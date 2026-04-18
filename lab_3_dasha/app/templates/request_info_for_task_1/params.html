@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="mt-5 text-center">Параметры запроса</h1>
+{% if url_params %}
+<ul>
+{% for name, value in url_params %}
+<li><strong>{{ name }}</strong>: {{ value }}</li>
+{% endfor %}
+</ul>
+{%else%}
+<p>Нет параметров</p>
+{% endif %} 
+
+{% endblock %}
+
+paea,ds/?search_query=%2Cecz

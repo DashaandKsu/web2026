@@ -1,0 +1,4 @@
+flask
+faker
+flask-login
+pytest>=7.0.0

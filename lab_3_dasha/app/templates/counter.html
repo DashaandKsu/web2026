@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="mt-5 text-center">Счётчик посещений</h1>
+
+{% if visits %}
+<p>Вы посетили эту страницу {{ visits }} раз</p>
+{% else %}
+<p>Вы еще не посетили эту страницу</p>
+{% endif %}
+{% endblock %}

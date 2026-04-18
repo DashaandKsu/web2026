@@ -1,0 +1,3 @@
+flask
+faker
+pytest>=7.0.0

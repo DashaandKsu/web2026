@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="mt-5 text-center">Заголовки запроса</h1>
+{% if headers %}
+<ul>
+{% for name, value in headers %}
+<li><strong>{{ name }}</strong>: {{ value }}</li>
+{% endfor %}
+</ul>
+{%else%}
+<p>Нет заголовков</p>
+{% endif %}
+{% endblock %}

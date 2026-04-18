@@ -1,0 +1,13 @@
+body {
+    font-size: 1.25rem;
+}
+
+.avatar {
+    max-width: 100%;
+}
+
+.comment-avatar {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
